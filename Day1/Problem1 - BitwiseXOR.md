@@ -1,10 +1,10 @@
 18-12-2023
 
-## Problem Statement:
+# Problem Statement:
 
 Given an array A of size N. The value of an array is denoted by the bit-wise XOR of all elements it contains. Find the bit-wise XOR of the values of all subarrays of A.
 
-# Solution 1:
+## Solution 1:
 
 ```javascript
 function bitwiseXOROfSubarrays(arr) {
@@ -31,7 +31,7 @@ console.log(result);
 
 Time complexity -> O(n^3)
 
-# Optimized solution(using bitwise properties):
+## Optimized solution(using bitwise properties):
 
 ```javascript
 function bitwiseXOROfSubarraysMostOptimized(arr) {
@@ -58,7 +58,7 @@ console.log(result);
 
 Time complexity -> O(n)
 
-## Learning:
+# Learning:
 
 The optimized code is based on bitwise property which is as follows:
 a^a = 0 (even repetition)
