@@ -29,3 +29,4 @@ posOfRightMostDiffBit(m, n);
 - to convert decimal to binary: num=10
   num.toString(2) -> 2 denotes base of number.  
    padStart to fix length: num.toString(2).padStart(8,'0')
+- Time Complexity: O(n)
