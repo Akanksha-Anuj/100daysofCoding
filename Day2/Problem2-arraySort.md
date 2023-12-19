@@ -22,3 +22,5 @@ Time Complexity Analysis: Iterating through the array takes O(N) time.
   - for numerical comparison provide a compare function:
     - array.sort((a,b)=>a-b)
     - a-b: if result is negative a comes first. Does in-place sorting
+    - modifies original array.
+- copy array to another: arr2 = [...array1] // spread operator
