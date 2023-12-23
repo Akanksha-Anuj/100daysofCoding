@@ -24,6 +24,41 @@ public static boolean isAnagram(String a,String b)
     }
 ```
 
+better time complexity:
+
+```java
+ public static boolean isAnagram(String a,String b)
+    {
+        if(a.length() != b.length())
+        return false;
+        HashMap<Character, Integer> hm = new HashMap<>();
+        // Your code here
+        for(int i=0;i<a.length();i++){
+            if(hm.containsKey(a.charAt(i))){
+                hm.put(a.charAt(i), hm.get(a.charAt(i))+1);
+            }
+            else {
+                hm.put(a.charAt(i),1);
+            }
+
+            }
+            for(int i=0;i<b.length();i++){
+                if(!hm.containsKey(b.charAt(i)))
+                return false;
+                else{
+                    int value = hm.get(b.charAt(i));
+                    value--;
+                    if(value <0)
+                    return false;
+                    else hm.put(b.charAt(i), value);
+
+                }
+            }
+            return true;
+        }
+
+```
+
 # Learning:
 
 - Need to focus more on edge cases for simple programs as well.
